@@ -12,12 +12,6 @@ type Props = {
 };
 
 export const Layout = memo(({ children }: Props) => {
-  const location = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
-
   return (
     <Stack w="full" minH="full" spacing={0}>
       <NavMenu />

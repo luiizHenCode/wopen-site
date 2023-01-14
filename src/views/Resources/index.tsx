@@ -12,6 +12,9 @@ type Props = {
 };
 
 export const Resources = memo(({ openModal }: Props) => {
+
+  
+
   return (
     <Layout>
       <ResourcesCards />

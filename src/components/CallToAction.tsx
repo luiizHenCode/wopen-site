@@ -51,6 +51,7 @@ export const CallToAction = memo(() => {
             color="gray.100"
             colorScheme="whiteAlpha"
             rounded="full"
+            onClick={() => window.scrollTo(0, 0)}
           >
             <Text fontSize="lg" fontWeight="semibold" mr={2}>
               Ver mais
