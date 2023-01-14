@@ -98,7 +98,7 @@ export const Hero = memo(() => {
               textAlign={{ base: "center", lg: "left" }}
             >
               Com o <b>Chatbot WOPEN</b>, é possivel integrar varios canais de
-              atendimento em um lugar só! Tenha mais controle de seus
+              atendimento em um só lugar! Tenha mais controle de seus
               atendimentos.
             </Text>
 
