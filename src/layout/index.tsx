@@ -1,6 +1,5 @@
-import { memo, useEffect } from "react";
+import { memo } from "react";
 import { Stack } from "@chakra-ui/react";
-import { useLocation } from "react-router-dom";
 
 import { CallToAction } from "components/CallToAction";
 import { FloatButton } from "components/FloatButton";
