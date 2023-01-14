@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider } from "@chakra-ui/react";
 
-function App() {
+import { Home } from "./views/Home";
+import { THEME } from "./styles/theme";
+import { AppRoutes } from "routes/app.routes";
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider
+      theme={THEME}
+      toastOptions={{ defaultOptions: { duration: 2000 } }}
+    >
+      <AppRoutes />
+    </ChakraProvider>
   );
-}
-
-export default App;
+};
